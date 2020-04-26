@@ -7,7 +7,6 @@ threads = None
 
 s = speedtest.Speedtest()
 s.get_servers(servers)
-# s.get_best_server()
 s.download(threads=threads)
 s.upload(threads=threads, pre_allocate=False)
 
@@ -21,7 +20,7 @@ speed_data = [
     {
         "measurement" : "internet_speed",
         "tags" : {
-            "host": "RaspberryPiMyLifeUp"
+            "host": "my"
         },
         "fields" : {
             "download" : download,
